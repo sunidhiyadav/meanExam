@@ -1,4 +1,4 @@
-myApp.controller("PollController", function($scope, $routeParams, $location, pollFactory, userFactory) {
+myApp.controller("PollController", function($scope, $cookies, $routeParams, $location, pollFactory, userFactory) {
   $scope.username = '';
 
   userFactory.readUser(function(user){
@@ -21,6 +21,7 @@ myApp.controller("PollController", function($scope, $routeParams, $location, pol
   }
 
   $scope.addQuestion = function() {
+    //var username = $cookies.get('name');
     console.log("21. In add Poll Controller" + $scope.username);
     pollFactory.addQuestion($scope.selectedQuestion, $scope.username, function () {
       console.log("23. In Poll Controller" + $scope.username);
