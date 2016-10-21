@@ -1,0 +1,43 @@
+<a style = "margin-left:12px;" href="" class="btn btn-info btn-lg" ng-click="logout()"><span class="glyphicon glyphicon-log-out"></span>Logout</span></a>
+<div class="container" >
+  	<div class="row">
+  		<div class="col-md-12">
+        <h3 class="text-center">{{question.name}}</h3>
+        <h6>Click the option to vote</h6>
+        </div>
+        <table class="table table-bordered">
+          <thead>
+  	        <tr>
+  	          <th>Option</th>
+              <th>Current Count of votes</th>
+  	          <th>Action</th>
+  	        </tr>
+  	      </thead>
+          <tbody>
+            <tr>
+              <td>{{question.option1}}</td>
+              <td>{{question.option1_votes}}</td>
+              <td> <button ng-click="addVote(1)">Vote!</button></td>
+            </tr>
+            <tr>
+              <td>{{question.option2}}</td>
+              <td>{{question.option2_votes}}</td>
+
+              <td><!--a ng-click="addVote(1)">Vote</a-->
+              <button ng-click="addVote(2)">Vote!</button></td>
+            </tr>
+            <tr>
+              <td>{{question.option3}}</td>
+              <td>{{question.option3_votes}}</td>
+              <td><button ng-click="addVote(3)">Vote!</button></td>
+            </tr>
+            <tr>
+              <td>{{question.option4}}</td>
+              <td>{{question.option4_votes}}</td>
+              <td> <button ng-click="addVote(4)">Vote!</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+    </div>

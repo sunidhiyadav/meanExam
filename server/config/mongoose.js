@@ -1,7 +1,7 @@
 
 var mongoose = require("mongoose");
 var fs = require("fs");
-mongoose.connect("mongodb://localhost/mean_exam");
+mongoose.connect("mongodb://localhost/poll_survey");
 // specify the path to all of the models
 var models_path = __dirname + "/../models";
 

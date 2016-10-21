@@ -1,0 +1,75 @@
+<a style = "margin-left:12px;" href="" class="btn btn-info btn-lg" ng-click="logout()"><span class="glyphicon glyphicon-log-out"></span>Logout</span></a>
+<div class="container" >
+  	<div class="row">
+  	<div class="col-md-12">
+  	</div>
+  		<div class="col-md-12">
+  			<h3 class="text-center">Put the question and answer here</h3><br>
+  			<div class="col-md-7">
+  				<form class="form-horizontal" name="pollForm">
+  				  <div class="form-group">
+  				    <label for="question" class="col-sm-2 control-label">Question:</label>
+  				    <div class="col-sm-10">
+  				      <input type="text" class="form-control" name="name" placeholder="Question" ng-model="selectedQuestion.name"
+                ng-minlength="8" required="true">
+  				    </div>
+              <div role="alert">
+                <span class="error" style="color:red;" ng-show="pollForm.name.$error.minlength">
+                Question should be atleat 8 Characters long</span>
+            </div><br/>
+  				  </div>
+            <div class="form-group">
+  				    <label for="Option 1" class="col-sm-2 control-label">Option 1:</label>
+  				    <div class="col-sm-10">
+  				      <input type="text" class="form-control" name="option1" placeholder="Option 1" ng-model="selectedQuestion.option1"
+                ng-minlength="3" required="true">
+  				    </div>
+              <div role="alert">
+                <span class="error" style="color:red;" ng-show="pollForm.option1.$error.minlength">
+                Option should be atleat 3 Characters long</span>
+            </div><br/>
+  				  </div>
+            <div class="form-group">
+  				    <label for="Option 2" class="col-sm-2 control-label">Option 2:</label>
+  				    <div class="col-sm-10">
+  				      <input type="text" class="form-control" name="option2" placeholder="Option 2" ng-model="selectedQuestion.option2"
+                ng-minlength="3" required="true">
+  				    </div>
+              <div role="alert">
+                <span class="error" style="color:red;" ng-show="pollForm.option2.$error.minlength">
+                Option should be atleat 3 Characters long</span>
+            </div><br/>
+  				  </div>
+            <div class="form-group">
+  				    <label for="option 3" class="col-sm-2 control-label">Option 3:</label>
+  				    <div class="col-sm-10">
+  				      <input type="text" class="form-control" name="option3" placeholder="Option 3" ng-model="selectedQuestion.option3"
+                ng-minlength="3" required="true">
+  				    </div>
+              <div role="alert">
+                <span class="error" style="color:red;" ng-show="pollForm.option3.$error.minlength">
+                Option should be atleat 3 Characters long</span>
+            </div><br/>
+  				  </div>
+            <div class="form-group">
+  				    <label for="OPtion 4" class="col-sm-2 control-label">Option 4:</label>
+  				    <div class="col-sm-10">
+  				      <input type="text" class="form-control" name="option4" placeholder="Option 4" ng-model="selectedQuestion.option4"
+                ng-minlength="3" required="true">
+  				    </div>
+              <div role="alert">
+                <span class="error" style="color:red;" ng-show="pollForm.option4.$error.minlength">
+                Option should be atleat 3 Characters long</span>
+            </div><br/>
+  				  </div>
+  				  <div class="form-group" style="margin-left:300px;">
+                 <a href="#/"><button class="btn" aria-hidden="true">Cancel</button></a>
+  				      <input type="submit" class="btn btn-info" value="Add Question" ng-click="addQuestion()">
+  				    </div>
+  				  </div>
+  				</form>
+
+  			</div>
+  		</div>
+  	</div>
+  </div>

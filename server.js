@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname + "/bower_components")));
 
 require("./server/config/mongoose.js");
 require("./server/config/routes.js")
-//require("./server/config/routes.js")(app);
+require("./server/config/routes.js")(app);
 
 app.listen(8000, function() {
     console.log("Mean Exam running on 8000");
