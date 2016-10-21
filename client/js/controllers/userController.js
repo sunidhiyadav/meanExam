@@ -9,7 +9,7 @@ myApp.controller('UserController', ['$scope','$cookies', '$location', 'userFacto
     userFactory.createUser($scope.login);
     //$cookies.put('name', $scope.login.username);
     //$cookies.put('_id', data._id);
-    $scope.login = {};
+    //$scope.login = {};
     $location.path('/');
   }
 

@@ -19,7 +19,10 @@
             <td><a href="#/poll/{{question._id}}">{{question.name}}</a></td>
             <td>{{question.createdAt | date}}</td>
 	          <td>
-							<button class="btn btn-danger"  ng-click="removeQuestion(question._id)">Remove</button>
+              <div ng-if="username == question.addedBy">
+                <button class="btn btn-danger"  ng-click="removeQuestion(question._id)">Remove</button>
+              </div>
+
 	          </td>
 	        </tr>
 	      </tbody>
