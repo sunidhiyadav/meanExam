@@ -11,5 +11,5 @@ require("./server/config/routes.js")
 //require("./server/config/routes.js")(app);
 
 app.listen(8000, function() {
-    console.log("Question and answer running on 8000");
+    console.log("Mean Exam running on 8000");
 });
